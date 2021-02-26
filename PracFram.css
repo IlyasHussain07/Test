@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.master-main {
+    margin-left: 40%;
+    margin-right: 40%;
+}
+.master-ref-blog {
+
+}
+.master-IMG {
+    
+    width: 300px;
+    background: rgb(211, 201, 201);
+}
+.master-IMG img {
+    width: 300px;
+    height: 200px;
+
+}
+.master-IMG p {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
