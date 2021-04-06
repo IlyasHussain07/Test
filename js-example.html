@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons javascript</title>
+    <style>
+    body {
+        background: #07094d;
+    } 
+    button {
+        border: none;
+        background: #07094d;
+        width: 300px;
+        padding: 50px;
+        font-size: 30px;
+        color: #fff;
+        box-shadow: 0 25px 50px rgba(0, 0, 0, 0.8);
+        margin: 10px;
+    }
+    button:hover {
+        background: #EEEB18;
+        color: black;
+        box-shadow: 0 25px 50px #EEEB18;
+    }
+    .btn-1 {
+        position: absolute;
+        top: 70%;
+        left: 30%;
+    }
+    .btn-2 {
+        position: absolute;
+        top: 70%;
+        left: 50%;
+    }
+    @media (max-width: 768px) {
+    	button {
+        width: 70px;
+        font-size: 10px;
+        padding: 10px
+        }
+        .btn-1 {
+        position: absolute;
+         top: 70%;
+        left:30%;
+        }
+    }
+    </style>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+
+    <button type="button" onclick="example()" class="btn-1">click me</button>
+    <button type="button" onclick="example2()"class="btn-2">click me!</button>
+
+    <script>
+        function example() {
+            document.getElementById("demo").style.background="#03042c";
+            document.getElementById("demo").style.fontSize="25px";
+            document.getElementById("demo").style.padding="20px";
+            document.getElementById("demo").style.boxShadow="0 25px 50px rgba(0,0,0,0.8)";
+            document.getElementById("demo").style.color="#fff";
+            document.getElementById("demo").style.textAlign="center";
+            document.getElementById("demo").innerHTML="Hello and Welcome!";
+        }
+        function example2() {
+            document.getElementById("demo1").style.background="#03042c"
+            document.getElementById("demo1").style.fontSize="20px";
+            document.getElementById("demo1").style.padding="20px";
+            document.getElementById("demo1").style.boxShadow="0 25px 50px rgba(0,0,0,0.8)";
+            document.getElementById("demo1").style.color="#fff";
+            document.getElementById("demo1").style.marginTop="50px";
+            document.getElementById("demo1").style.textAlign="center";
+            document.getElementById("demo1").innerHTML="Hello my name is ilyas and i am practicing the javascript";
+        }
+    </script>
+</body>
+</html>
